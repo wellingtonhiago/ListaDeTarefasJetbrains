@@ -51,8 +51,8 @@ fun date(): LocalDate? {
         try {
             val inputDate = readLine()!!.split("-")
             return LocalDate(   inputDate[0].toInt(),
-                inputDate[1].toInt(),
-                inputDate[2].toInt())
+                                inputDate[1].toInt(),
+                                inputDate[2].toInt())
         } catch (e: IllegalArgumentException) {
             println("The input date is invalid")
         }
