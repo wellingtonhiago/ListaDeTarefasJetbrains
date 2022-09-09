@@ -50,7 +50,7 @@ object Interpreter {
         }
     }
 
-    fun getTaskToEdit():Task {
+    fun getTaskToEdit(): Task {
         var taskToEdit:Int? = null
         while(taskToEdit == null) {
             println("Input the task number (1-${TaskList.tasks.size}):")
